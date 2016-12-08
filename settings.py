@@ -4,7 +4,7 @@ from visual import *
 """ These are basic settings for the game
     Change the numbers for fun!
 """
-BOARD_WIDTH = 15
+BOARD_WIDTH = 10
 BOARD_HEIGHT = 20
 speed_rate = 1
 

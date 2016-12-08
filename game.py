@@ -51,7 +51,6 @@ def play(t_stamp = [time.time(), 0]):
 
         t_stamp[0] = t_stamp[1]
 
-    print piece
     # Key board Control
     if scene.kb.keys:
         key = scene.kb.getkey()
