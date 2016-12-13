@@ -19,6 +19,7 @@ def play(t_stamp = [time.time(), 0]):
     """
 
     global piece, px, py, pc, focus, score
+    global speed_rate
 
     # Time goes on
     t_stamp[1] = time.time()
@@ -69,6 +70,8 @@ def play(t_stamp = [time.time(), 0]):
         elif key == 'backspace':
             scene.pause = not scene.pause
 
+        elif key in ('[', ']'):
+            speed_rate = speed_rate + (0.1 if key in '[' else -0.1)
 
     # Change the position
     for i in xrange(4): focus[i].pos = vector(px, py) + piece[i]
